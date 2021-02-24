@@ -23,6 +23,9 @@
         <input type="text" name='newTodo' id='newTodo' v-model='newTodo'>
         <button type='submit' name='button'>Add</button>
       </form>
+      <ul v-for='todo in todos'>
+        <li>{{todo}}</li>
+      </ul>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src='app.js' charset="utf-8"></script>
